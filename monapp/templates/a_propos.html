@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <h1>À propos</h1>
+    <p>Voici une image chargée via les fichiers statiques :</p>
+    <img src="{% static 'images/photo.png' %}" alt="Ma Photo" style="max-width:300px;">
+{% endblock %}
